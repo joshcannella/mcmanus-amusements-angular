@@ -1,12 +1,12 @@
 @import '~@angular/material/theming';
 
-@mixin anms-about-component-theme($theme) {
+@mixin mcma-about-component-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $foreground: map-get($theme, foreground);
   $background: map-get($theme, background);
 
-  anms-about {
+  mcma-about {
     .background {
       color: mat-color($foreground, text);
       background-color: mat-color($background, background);
@@ -37,9 +37,57 @@
       }
     }
 
+    a {
+      color: mat-color($primary);
+
+      &:hover {
+        color: mat-color($accent, darker);
+      }
+    }
+
     .contributors {
       img {
         border-color: mat-color($background, background) !important;
+      }
+    }
+
+    section.light {
+      background-color: #f2f0f0;
+      color: #000;
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: mat-color($primary);
+      }
+
+      hr.divider {
+        border-color: mat-color($primary);
+      }
+
+      fa-icon {
+        color: mat-color($primary);
+      }
+    }
+
+    section.dark {
+      background-color: mat-color($primary);
+      color: #d1c4e9;
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #fff;
+      }
+
+      hr.divider {
+        border-color: #fff;
+      }
+
+      fa-icon {
+        color: #fff;
       }
     }
   }

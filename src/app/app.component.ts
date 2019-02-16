@@ -22,7 +22,7 @@ import {
 } from './settings';
 
 @Component({
-  selector: 'anms-root',
+  selector: 'mcma-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [routeAnimations]
@@ -34,15 +34,15 @@ export class AppComponent implements OnInit {
   year = new Date().getFullYear();
   logo = require('../assets/logo.png');
   languages = ['en', 'de', 'sk', 'fr', 'es', 'pt-br', 'zh-cn'];
-  navigation = [
-    { link: 'about', label: 'anms.menu.about' },
-    { link: 'features', label: 'anms.menu.features' },
-    { link: 'examples', label: 'anms.menu.examples' }
+  /* navigation = [
+    { link: 'about', label: 'mcma.menu.about' },
+    { link: 'features', label: 'mcma.menu.features' },
+    { link: 'examples', label: 'mcma.menu.examples' }
   ];
   navigationSideMenu = [
     ...this.navigation,
-    { link: 'settings', label: 'anms.menu.settings' }
-  ];
+    { link: 'settings', label: 'mcma.menu.settings' }
+  ]; */
 
   isAuthenticated$: Observable<boolean>;
   stickyHeader$: Observable<boolean>;

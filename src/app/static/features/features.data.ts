@@ -13,28 +13,28 @@ export const features: Feature[] = [
   {
     name: 'Angular',
     version: env.versions.angular,
-    description: 'anms.features.angular',
+    description: 'mcma.features.angular',
     github: 'https://github.com/angular/angular',
     documentation: 'https://angular.io/docs/ts/latest/'
   },
   {
     name: 'Angular Material',
     version: env.versions.material,
-    description: 'anms.features.angular-material',
+    description: 'mcma.features.angular-material',
     github: 'https://github.com/angular/material2/',
     documentation: 'https://material.angular.io/'
   },
   {
     name: 'Angular Cli',
     version: env.versions.angularCli,
-    description: 'anms.features.angular-cli',
+    description: 'mcma.features.angular-cli',
     github: 'https://github.com/angular/angular-cli',
     documentation: 'https://cli.angular.io/'
   },
   {
     name: 'NgRx',
     version: env.versions.ngrx,
-    description: 'anms.features.ngrx',
+    description: 'mcma.features.ngrx',
     github: 'https://github.com/ngrx/platform',
     documentation: 'http://ngrx.github.io/',
     medium:
@@ -43,7 +43,7 @@ export const features: Feature[] = [
   {
     name: 'RxJS',
     version: env.versions.rxjs,
-    description: 'anms.features.rxjs',
+    description: 'mcma.features.rxjs',
     github: 'https://github.com/ReactiveX/RxJS',
     documentation: 'http://reactivex.io/rxjs/',
     medium:
@@ -52,7 +52,7 @@ export const features: Feature[] = [
   {
     name: 'Bootstrap',
     version: env.versions.bootstrap,
-    description: 'anms.features.bootstrap',
+    description: 'mcma.features.bootstrap',
     github: 'https://github.com/twbs/bootstrap',
     documentation: 'https://getbootstrap.com/docs/4.0/layout/grid/',
     medium:
@@ -61,41 +61,41 @@ export const features: Feature[] = [
   {
     name: 'Typescript',
     version: env.versions.typescript,
-    description: 'anms.features.typescript',
+    description: 'mcma.features.typescript',
     github: 'https://github.com/Microsoft/TypeScript',
     documentation: 'https://www.typescriptlang.org/docs/home.html'
   },
   {
     name: 'I18n',
     version: env.versions.ngxtranslate,
-    description: 'anms.features.ngxtranslate',
+    description: 'mcma.features.ngxtranslate',
     github: 'https://github.com/ngx-translate/core',
     documentation: 'http://www.ngx-translate.com/'
   },
   {
     name: 'Font Awesome 5',
     version: env.versions.fontAwesome,
-    description: 'anms.features.fontawesome',
+    description: 'mcma.features.fontawesome',
     github: 'https://github.com/FortAwesome/Font-Awesome',
     documentation: 'https://fontawesome.com/icons'
   },
   {
     name: 'Cypress',
     version: env.versions.cypress,
-    description: 'anms.features.cypress',
+    description: 'mcma.features.cypress',
     github: 'https://github.com/cypress-io/cypress',
     documentation: 'https://www.cypress.io/'
   },
   {
-    name: 'anms.features.themes.title',
-    description: 'anms.features.themes.description',
+    name: 'mcma.features.themes.title',
+    description: 'mcma.features.themes.description',
     documentation: 'https://material.angular.io/guide/theming',
     medium:
       'https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1'
   },
   {
-    name: 'anms.features.lazyloading.title',
-    description: 'anms.features.lazyloading.description',
+    name: 'mcma.features.lazyloading.title',
+    description: 'mcma.features.lazyloading.description',
     documentation:
       'https://angular.io/guide/router#lazy-loading-route-configuration'
   }

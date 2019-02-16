@@ -50,14 +50,17 @@ import {
   faLightbulb,
   faWindowMaximize,
   faStream,
-  faBook
+  faBook,
+  faPhone,
+  faEnvelope
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faMediumM,
   faTwitter,
   faInstagram,
-  faYoutube
+  faYoutube,
+  faFacebook
 } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
@@ -88,7 +91,10 @@ library.add(
   faLightbulb,
   faWindowMaximize,
   faStream,
-  faBook
+  faBook,
+  faFacebook,
+  faPhone,
+  faEnvelope
 );
 
 import { BigInputComponent } from './big-input/big-input.component';

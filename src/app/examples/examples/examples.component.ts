@@ -11,7 +11,7 @@ import { State as BaseExamplesState } from '../examples.state';
 interface State extends BaseSettingsState, BaseExamplesState {}
 
 @Component({
-  selector: 'anms-examples',
+  selector: 'mcma-examples',
   templateUrl: './examples.component.html',
   styleUrls: ['./examples.component.scss'],
   animations: [routeAnimations],
@@ -21,13 +21,13 @@ export class ExamplesComponent implements OnInit {
   isAuthenticated$: Observable<boolean>;
 
   examples = [
-    { link: 'todos', label: 'anms.examples.menu.todos' },
-    { link: 'stock-market', label: 'anms.examples.menu.stocks' },
-    { link: 'theming', label: 'anms.examples.menu.theming' },
-    { link: 'crud', label: 'anms.examples.menu.crud' },
-    { link: 'form', label: 'anms.examples.menu.form' },
-    { link: 'notifications', label: 'anms.examples.menu.notifications' },
-    { link: 'authenticated', label: 'anms.examples.menu.auth', auth: true }
+    { link: 'todos', label: 'mcma.examples.menu.todos' },
+    { link: 'stock-market', label: 'mcma.examples.menu.stocks' },
+    { link: 'theming', label: 'mcma.examples.menu.theming' },
+    { link: 'crud', label: 'mcma.examples.menu.crud' },
+    { link: 'form', label: 'mcma.examples.menu.form' },
+    { link: 'notifications', label: 'mcma.examples.menu.notifications' },
+    { link: 'authenticated', label: 'mcma.examples.menu.auth', auth: true }
   ];
 
   constructor(private store: Store<State>) {}

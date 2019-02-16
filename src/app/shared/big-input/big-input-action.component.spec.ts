@@ -38,13 +38,13 @@ describe('BigInputActionComponent', () => {
     }));
 
   it('should be created', () => {
-    const template = '<anms-big-input-action></anms-big-input-action>';
+    const template = '<mcma-big-input-action></mcma-big-input-action>';
     fixture = createHostComponent(template);
     expect(component).toBeTruthy();
   });
 
   it('should initially not be disabled and show no icon or label', () => {
-    const template = '<anms-big-input-action></anms-big-input-action>';
+    const template = '<mcma-big-input-action></mcma-big-input-action>';
     fixture = createHostComponent(template);
     expect(getButton().nativeElement.disabled).toBeFalsy();
     expect(getIcon()).toBeNull();
@@ -53,13 +53,13 @@ describe('BigInputActionComponent', () => {
 
   it('should disable button if disabled property is set', () => {
     const template =
-      '<anms-big-input-action [disabled]="true"></anms-big-input-action>';
+      '<mcma-big-input-action [disabled]="true"></mcma-big-input-action>';
     fixture = createHostComponent(template);
     expect(getButton().nativeElement.disabled).toBeTruthy();
   });
 
   it('should display icon if fontSet and fontIcon properties are set', () => {
-    const template = `<anms-big-input-action fontSet="fas" fontIcon="fa-trash"></anms-big-input-action>`;
+    const template = `<mcma-big-input-action fontSet="fas" fontIcon="fa-trash"></mcma-big-input-action>`;
     fixture = createHostComponent(template);
     expect(getIcon()).toBeTruthy();
     expect(getIcon().nativeElement.classList.contains('fa-trash')).toBeTruthy();
@@ -67,14 +67,14 @@ describe('BigInputActionComponent', () => {
   });
 
   it('should display label with provided text when label property is set', () => {
-    const template = `<anms-big-input-action label="delete"></anms-big-input-action>`;
+    const template = `<mcma-big-input-action label="delete"></mcma-big-input-action>`;
     fixture = createHostComponent(template);
     expect(getLabel()).toBeTruthy();
     expect(getLabel().nativeElement.textContent).toBe('delete');
   });
 
   it('should emit action event on button click', () => {
-    const template = `<anms-big-input-action (action)="actionHandler()"></anms-big-input-action>`;
+    const template = `<mcma-big-input-action (action)="actionHandler()"></mcma-big-input-action>`;
     fixture = createHostComponent(template);
     spyOn(component, 'actionHandler').and.callThrough();
     getButton().triggerEventHandler('click', {});

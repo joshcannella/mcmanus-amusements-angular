@@ -1,5 +1,5 @@
-$anms-primary: mat-palette($mat-indigo, 800, 300, 900);
-$anms-accent: mat-palette($mat-light-blue);
-$anms-warn: mat-palette($mat-pink, 600);
+$mcma-primary: mat-palette($mat-deep-purple, 800);
+$mcma-accent: mat-palette($mat-gray, 400);
+$mcma-warn: mat-palette($mat-deep-orange, 900);
 
-$anms-theme: mat-light-theme($anms-primary, $anms-accent, $anms-warn);
+$mcma-theme: mat-light-theme($mcma-primary, $mcma-accent, $mcma-warn);

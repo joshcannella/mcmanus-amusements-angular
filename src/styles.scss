@@ -25,34 +25,69 @@
 @import 'app/examples/examples/examples.component.scss-theme';
 
 @mixin custom-components-theme($theme) {
-  @include anms-styles-reset-theme($theme);
-  @include anms-app-component-theme($theme);
-  @include anms-about-component-theme($theme);
-  @include anms-big-input-component-theme($theme);
-  @include anms-notifications-component-theme($theme);
-  @include anms-todos-container-component-theme($theme);
-  @include anms-stock-market-container-component-theme($theme);
-  @include anms-parent-component-theme($theme);
-  @include anms-child-component-theme($theme);
-  @include anms-examples-component-theme($theme);
+  @include mcma-styles-reset-theme($theme);
+  @include mcma-app-component-theme($theme);
+  @include mcma-about-component-theme($theme);
+  @include mcma-big-input-component-theme($theme);
+  @include mcma-notifications-component-theme($theme);
+  @include mcma-todos-container-component-theme($theme);
+  @include mcma-stock-market-container-component-theme($theme);
+  @include mcma-parent-component-theme($theme);
+  @include mcma-child-component-theme($theme);
+  @include mcma-examples-component-theme($theme);
+
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $foreground: map-get($theme, foreground);
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  hr.divider {
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color: mat-color($primary);
+  }
+
+  .dark-text {
+    color: mat-color($primary) !important;
+  }
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.ml-auto,
+.mx-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto,
+.mx-auto {
+  margin-right: auto !important;
 }
 
 .default-theme {
-  @include angular-material-theme($anms-theme);
-  @include custom-components-theme($anms-theme);
+  @include angular-material-theme($mcma-theme);
+  @include custom-components-theme($mcma-theme);
 }
 
 .light-theme {
-  @include angular-material-theme($anms-light-theme);
-  @include custom-components-theme($anms-light-theme);
+  @include angular-material-theme($mcma-light-theme);
+  @include custom-components-theme($mcma-light-theme);
 }
 
 .black-theme {
-  @include angular-material-theme($anms-black-theme);
-  @include custom-components-theme($anms-black-theme);
+  @include angular-material-theme($mcma-black-theme);
+  @include custom-components-theme($mcma-black-theme);
 }
 
 .nature-theme {
-  @include angular-material-theme($anms-nature-theme);
-  @include custom-components-theme($anms-nature-theme);
+  @include angular-material-theme($mcma-nature-theme);
+  @include custom-components-theme($mcma-nature-theme);
 }
